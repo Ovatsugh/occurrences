@@ -1,0 +1,21 @@
+{
+  "name": "meu-projeto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "home/index.js",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "liteServer": {
+    "server": {
+      "baseDir": "./",
+      "routes": {
+        "/about": "index.html",
+        "/contact": "index.html"
+      }
+    }
+  }
+}

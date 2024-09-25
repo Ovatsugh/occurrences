@@ -1,0 +1,62 @@
+<div class="form-group">
+    <p class="title">Cadastro de Usuário</p>
+
+    <form id="userForm">
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
+                <label for="validationDefault01">Nome</label>
+                <input type="text" class="form-control" id="nameId" placeholder="First name" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="validationDefault02">Sobrenome</label>
+                <input type="text" class="form-control" id="sobrenomeId" placeholder="Last name" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="validationDefaultUsername">Telefone</label>
+                <div class="input-group">
+                    <input type="phone" class="form-control" id="telefoneId" placeholder="Telefone" required>
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-3 mb-3">
+                <label for="validationDefault04">Senha</label>
+                <input type="password" class="form-control" id="senhaId" placeholder="insira sua senha" required>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="validationDefault05">Confirmar senha</label>
+                <input type="password" class="form-control" id="confirmsenhaId" placeholder="confirme sua senha" required>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Tipo de Usuário</label>
+                <select class="form-control h-60" id="tipoUsuarioId" style="height: 60px;">
+                    <option selected>Choose...</option>
+                    <option value="1">Admin</option>
+                    <!-- <option value="2">Cidadão</option> -->
+                </select>
+            </div>
+        </div>
+    
+        <button class="btn btn-primary" type="submit">Cadastrar Usuário</button>
+    </form>
+    
+
+
+</div>
+
+<div class="user-table">
+    <p class="title">Lista de Usuário</p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Sobrenome</th>
+                <th scope="col">Tipo</th>
+            </tr>
+        </thead>
+        <tbody id="user-table-body">
+            <!-- As linhas serão inseridas aqui -->
+        </tbody>
+    </table>
+</div>

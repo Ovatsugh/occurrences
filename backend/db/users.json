@@ -1,0 +1,18 @@
+[
+  {
+    "id": 438527,
+    "name": "Gustavo",
+    "sobrenome": "Henrique",
+    "telefone": "94992027870",
+    "senha": "fhf",
+    "tipoUsuario": "1"
+  },
+  {
+    "id": 305268,
+    "name": "Davi",
+    "sobrenome": "Teste",
+    "telefone": "949999999",
+    "senha": "fdfssf",
+    "tipoUsuario": "1"
+  }
+]

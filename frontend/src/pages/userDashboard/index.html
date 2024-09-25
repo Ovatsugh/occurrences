@@ -1,0 +1,74 @@
+<div style="width: 90%;  display: flex; flex-direction: row; align-items: center; justify-content: center;  ">
+
+    <div style="width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <p class="title">Cadastro de Ocorrência</p>
+        <form id="occurrenceForm" style="width: 100%;">
+            <div class="form-group">
+                <label for="title">Insira o Titulo da Ocorrência</label>
+                <input type="text" class="form-control" id="title" placeholder="titulo da ocorrência">
+            </div>
+
+            <div class="form-group">
+                <label for="address">Insira o endereço da Ocorrência</label>
+                <input type="text" class="form-control" id="address" placeholder="endereço da ocorrência">
+            </div>
+
+            <div class="form-group">
+                <label for="description">Insira a descrição da ocorrência</label>
+                <textarea class="form-control" id="description" rows="3" placeholder="descrição da ocorrência"
+                    style="height: 10em;"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Cadastrar ocorrência</button>
+        </form>
+
+    </div>
+    <div class="container mt-4">
+        <div id="map" class="rounded shadow" style="height: 400px; width: 80%;"></div>
+    </div>
+</div>
+
+<div style="width: 70%; margin: auto; padding-top: 10%;">
+    <div class="input-group mb-3" style="margin-bottom: 20px;">
+        <input type="text" id="searchInput" class="form-control" placeholder="Buscar..." aria-label="Buscar"
+            aria-describedby="button-addon2">
+        <button class="btn btn-outline-success" type="button" id="searchButton"
+            style="margin-left: 5px; width: 10%;">Buscar</button>
+    </div>
+
+
+     <!-- Modal -->
+     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+     <div class="modal-dialog" role="document">
+         <div class="modal-content">
+             <div class="modal-header">
+                 <h5 class="modal-title" id="exampleModalLabel">Título do Modal</h5>
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                 </button>
+             </div>
+             <div class="modal-body">
+                 Conteúdo do modal aqui.
+             </div>
+             <div class="modal-footer">
+                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+             </div>
+         </div>
+     </div>
+ </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Código</th>
+                <th scope="col">Titulo</th>
+                <th scope="col">Descrição</th>
+                <th scope="col">Status</th>
+                <th scope="col">Ações</th>
+            </tr>
+        </thead>
+        <tbody id="occurence-table-body">
+            <!-- As linhas serão inseridas aqui -->
+        </tbody>
+    </table>
+</div>
